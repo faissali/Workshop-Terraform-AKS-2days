@@ -12,7 +12,7 @@ variable "resourceGroupName" {
   default = "RG-DemoGitHubfbu"
 }
 
-variable "resourceGroupName" {
+variable "ownerTag" {
   type    = string
   default = "faycal.bziou@exakis-nelite.com"
 }
