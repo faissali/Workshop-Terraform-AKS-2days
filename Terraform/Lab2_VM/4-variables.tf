@@ -1,7 +1,7 @@
 #  Resource Group Name
 variable "resourceGroupName" {
   type    = string
-  default = "RG-VM"
+  default = "RG-VMfbu"
 }
 
 variable "azureRegion" {
@@ -14,23 +14,28 @@ variable "azureRegion" {
 
 variable "vnetName" {
     type = string
-    default = "Vnet-VM"  
+    default = "Vnet-VMfbu"  
+}
+
+variable "ownerTag" {
+    type = string
+    default = "faycal.bziou@exakis-nelite.com"  
 }
 
 variable "subnetName" {
     type = string
-    default = "Subnet-VM"  
+    default = "Subnet-VMfbu"  
 }
 
 variable "nicName" {
     type = string
-    default = "Nic-1"
+    default = "Nic-1fbu"
   
 }
 
 variable "vmName" {
     type = string
-    default = "VM-Linux"  
+    default = "VM-Linuxfbu"  
 }
 
 # az vm list-skus -l westus
