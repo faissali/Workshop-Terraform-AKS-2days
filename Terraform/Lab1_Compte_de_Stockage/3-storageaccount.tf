@@ -13,7 +13,8 @@ resource "azurerm_storage_account" "Terra-Storage-Backend" {
   enable_https_traffic_only = true
 
   tags = {
-    environment = "lab"
+    environment = "lab",
+    owner = "faycal.bziou@exakis-nelite.com"
   }
 }
 
