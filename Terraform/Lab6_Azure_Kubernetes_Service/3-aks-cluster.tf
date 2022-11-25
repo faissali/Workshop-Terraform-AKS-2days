@@ -21,7 +21,6 @@ resource "azurerm_kubernetes_cluster" "Terra_aks" {
   sku_tier                   = var.sku-controlplane
   private_cluster_enabled    = var.enable-privatecluster
 
-
   default_node_pool {
     name                = var.defaultpool-name
     node_count          = var.defaultpool-nodecount
@@ -99,6 +98,7 @@ resource "azurerm_kubernetes_cluster" "Terra_aks" {
 
   tags = {
     Usage       = "WorkShop IaC"
+    owner = var.ownerTag
     Environment = "Azure AKS"
   }
 }

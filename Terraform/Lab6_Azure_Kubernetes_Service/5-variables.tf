@@ -74,9 +74,13 @@ variable "admin_username" {
 variable "kubernetes_version" {
   description = "Version of Kubernetes to deploy"
   type        = string
-  default     = "1.22.6"
+  default     = "1.25.2"
 }
 
+variable "ownerTag" {
+  type    = string
+  default = "faycal.bziou@exakis-nelite.com"
+}
 
 #Default Agent Pool
 
