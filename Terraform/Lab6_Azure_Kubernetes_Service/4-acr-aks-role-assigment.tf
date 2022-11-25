@@ -11,7 +11,7 @@ data "terraform_remote_state" "Terra-datasource-acr" {
   backend = "azurerm"
   
   config = {
-    resource_group_name  = "RG-AKSCluster"    # mettre ici le nom du resource group de vos ressource
+    resource_group_name  = "RG-AKSClusterfbu"    # mettre ici le nom du resource group de vos ressource
     storage_account_name = "terraformstan" # mettre le nom du compte de stockage créer dans le lab 1
     container_name       = "tfstate"
     key                  = "acr.terraform.tfstate"
