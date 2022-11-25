@@ -18,10 +18,11 @@ spec:
           image: "acrstan2022fbu.azurecr.io/coolapi:1.0.0"
           ports:
           - containerPort: 3000
-          livenessProbe:
-            httpGet:
-              path: /
+          readinessProbe:
+            tcpSocket:
               port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
           resources:
             limits:
               cpu: "1"
